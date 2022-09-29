@@ -65,28 +65,31 @@ namespace Project
                 // // 1 -> нет
                 Console.WriteLine("Введите номер дня недели (от 1 до 7): ");                        
                 int number = Convert.ToInt32(Console.ReadLine());
-                         
-                if (number == 6)
-                {
-                    Console.WriteLine("да, это выходной день");
-                }
-                else if (number == 7)
-                {
-                    Console.WriteLine("да, это выходной день");
+                string[] week = {"пн", "вт", "ср", "чт", "пт", "сб", "вс"};               
+                if (0 < number && number < 8)
+                {   
+                    Console.WriteLine(week[number - 1]);      
+                    if (number == 6 || number == 7)
+                    {
+                        Console.WriteLine("выходной день");
+                    }                       
+                    else
+                    {
+                        Console.WriteLine("будний день");  
+                    }
                 }
                 else
                 {
-                  Console.WriteLine("нет, это будний день");  
+                   Console.WriteLine("введено неверное число'");
                 }
-
+                
             }
             Console.WriteLine("Задача 15");
             Zadacha15();
-
-        }  
+              
+        }
+    #region Fill & Print        
     }
-    #region Fill & Print
-        
 }
 #endregion
 
