@@ -144,11 +144,11 @@ void Zadacha16()
     if (number2 == Math.Pow(number1, 2) //number2 == Math.Pow(number1, 2)-//Через функцию(Math.Pow)...
         || number1 == Math.Pow(number2, 2))                              //...что возводим(number1,),в квадрат(2).
     {
-      Console.WriteLine($"Да");  
+      Console.WriteLine("Да, является квадратом числа");  
     }
     else
     {
-        Console.WriteLine($"Нет");  
+        Console.WriteLine("Нет");  
     }
 
 
