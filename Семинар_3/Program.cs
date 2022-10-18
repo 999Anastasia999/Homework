@@ -47,7 +47,7 @@ namespace Project
             Console.WriteLine();
 
 
-            void Zadacha18()
+            void Zadacha18() 
             {
                 //Напишите программу, которая по заданному номеру четверти,
                 //показывает диапазон возможных координат точек в этой чеиверти (x и y).                
@@ -160,7 +160,7 @@ namespace Project
             }
             Console.WriteLine("Задача 21");
             Zadacha21();
-
+            Console.WriteLine();
 
             void Zadacha22()
             {
@@ -198,18 +198,28 @@ namespace Project
                 //     i++;
                 // }
  //♥♥♥ ЧЕТВЕРТОЕ РЕШЕНИЕ через while: ♥♥♥ 
-                Random RandNum = new Random();
-                int Num = RandNum.Next(1, 1000);
-                string ResultStr = "";
-                int i = 1;
-                Console.WriteLine($"Квадраты чисел от 1 до {Num}:");
-                while (i <= Num)
+                // Random RandNum = new Random();
+                // int Num = RandNum.Next(1, 1000);
+                // string ResultStr = "";
+                // int i = 1;
+                // Console.WriteLine($"Квадраты чисел от 1 до {Num}:");
+                // while (i <= Num)
+                // {
+                //     if (ResultStr.Length > 0) ResultStr = ResultStr.Insert(ResultStr.Length, ", ");
+                //     ResultStr = ResultStr.Insert(ResultStr.Length, Convert.ToString(Math.Pow(i,2)));
+                //     i++;
+                // }              
+                // Console.WriteLine(ResultStr);
+
+                //Напишите программу, которая принимает на вход число (N) 
+                //и выдает таблицу квадратов чисел от 1 до N.     
+                Console.WriteLine("Введите число: ");
+                int number = Convert.ToInt32(Console.ReadLine());
+
+                for (int i = 1; i <= number; i++)
                 {
-                    if (ResultStr.Length > 0) ResultStr = ResultStr.Insert(ResultStr.Length, ", ");
-                    ResultStr = ResultStr.Insert(ResultStr.Length, Convert.ToString(Math.Pow(i,2)));
-                    i++;
-                }              
-                Console.WriteLine(ResultStr);
+                        Console.WriteLine($"{i} * {i} = {Math.Pow (i, 2)}");
+                }    
             }
             Console.WriteLine("Задача 22");
             Zadacha22();
