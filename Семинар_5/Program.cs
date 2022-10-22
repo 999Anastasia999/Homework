@@ -67,18 +67,21 @@ int SummNegative(int[] numbers)
 
 void FillArray(int[] numbers,
                 int minValue = 0,
-                int maxValue = 100)
+                int maxValue = 9)
 {
+    maxValue++;
+    int size = numbers.Length; 
     Random random = new Random();
-    for (int i = 0; i < numbers.Length; i++)
+    for (int i = 0; i < size; i++)
     {
         numbers[i] = random.Next(minValue, maxValue);
     }
 }
 void PrintArray(int[] numbers)
 {
+    int size = numbers.Length;
     Console.WriteLine("Массив: ");
-    for (int i = 0; i < numbers.Length; i++)
+    for (int i = 0; i < size; i++)
     {
         Console.Write(numbers[i] + "  ");
     }
@@ -218,16 +221,16 @@ void Zadacha37()
 // Zadacha32();
 // Console.WriteLine();
 
-// Console.WriteLine("Задача 33.");
-// Zadacha33();
-// Console.WriteLine();
+Console.WriteLine("Задача 33.");
+Zadacha33();
+Console.WriteLine();
 
 
 // Console.WriteLine("Задача 35.");
 // Zadacha35();
 // Console.WriteLine();
 
-Console.WriteLine("Задача 37.");
-Zadacha37();
-Console.WriteLine();
+// Console.WriteLine("Задача 37.");
+// Zadacha37();
+// Console.WriteLine();
 
